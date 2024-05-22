@@ -1,5 +1,8 @@
-var nome = 'junior';
+/*var nome = 'junior';
 var nome = 'lima';
 console.log(nome);
 
-// let nao pode ser reatribuida da ERROR
+ let nao pode ser reatribuida da ERROR*/
+
+
+ 
