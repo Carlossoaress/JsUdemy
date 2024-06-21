@@ -1,4 +1,4 @@
-const numero = Number(prompt('Digite um Número'))
+const numero = Number(prompt('Digite um Número'));
 const numeroTitulo = document.getElementById('numero-titulo');
 const Texto = document.getElementById('texto');
 numeroTitulo.innerHTML = numero; 
