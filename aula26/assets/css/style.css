@@ -1,54 +1,67 @@
-* {
-    box-sizing: border-box;
-    outline: 0;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background:rgb(120, 221, 255);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5em;
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 .container {
-    max-width:640px ;
-    margin: 50px auto;
-    background: white;
-    padding:20px;
-    border-radius: 10px;
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-form input,form label,form button{  
-    display: block;
-    width: 100%;
-
-}
-form button{
-    border: none;
-    margin-top: 20px;
-    padding: 10px;;
-    background: rgb(120, 221, 255);
-    color: rgb(37, 36, 36);
-    font-size: 18px;
-    font-weight: bolder;
-    cursor: pointer;
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-form input{
-    font-size: 24px;
-    height: 40px;
-    
-
-}
-form input:focus{
-    outline:3px solid blue;
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
 }
 
-form button:hover{
-    background: rgb(89, 162, 186);
+form input:focus {
+  outline: 1px solid var(--primary-color);
 }
-form button:active{
-    background:black ;
-    color: rgb(120, 221, 255);
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.paragrafo-resultado, .bad {
+  background: rgb(109, 255, 182);
+  padding: 10px 20px;
+}
+
+.bad {
+  background: rgb(255, 150, 150);
 }
