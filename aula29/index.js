@@ -1,4 +1,4 @@
-const data = new Date('1987-04-23 00:00:00');
+const data = new Date();
 let diaSemana = data.getDay();
 let diaSemanaTexto;
 
@@ -24,6 +24,8 @@ switch(diaSemana) {
     case 6:
         diaSemanaTexto='Sabado';
         break;
+        default:
+            diaSemanaTexto='error';
 
         
 }
