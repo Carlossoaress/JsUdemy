@@ -65,7 +65,7 @@ switch(numeroMes) {
         numeroMes='Novembro';
         return numeroMes;       
     case 11:
-        numeroMes='Dezenbro';
+        numeroMes='Dezembro';
         return numeroMes;       
     case 12:
         numeroMes='Sabado';
@@ -73,4 +73,13 @@ switch(numeroMes) {
  }
 } 
 
-h1.innerHTML = getNomeMes(data.getDay())
+function criaData(data) {
+    const diaSemana = data.getDay();
+    const numeroMes = data.getMonth();
+
+    const nomeDia = getdiaSemanaTexto(diaSemana);
+    const nomeMes = getNomeMes(numeroMes);
+
+}
+
+h1.innerHTML = criaData(data);
