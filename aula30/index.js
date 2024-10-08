@@ -1,11 +1,11 @@
 const h1 = document.querySelector('.container h1');
 const data = new Date();
 
-function getdiaSemanaTexto(diaSemana){
+function getDiaSemanaTexto(diaSemana){
     let diaSemanaTexto;
-switch(diaSemana) {
+switch (diaSemana) {
     case 0:
-        diaSemanaTexto='Domingo';
+        diaSemanaTexto= 'Domingo';
         return diaSemanaTexto;
     case 1:
         diaSemanaTexto='Segunda-Feira';
@@ -28,7 +28,7 @@ switch(diaSemana) {
  }
 } 
 
-function getNomeMes(numeroMes){
+/*function getNomeMes(numeroMes){
     let numeroMes;
 switch(numeroMes) {
     case 0:
@@ -80,6 +80,6 @@ function criaData(data) {
     const nomeDia = getdiaSemanaTexto(diaSemana);
     const nomeMes = getNomeMes(numeroMes);
 
-}
+}*/
 
-h1.innerHTML = criaData(data);
+h1.innerHTML = getDiaSemanaTexto(data.getDay());
